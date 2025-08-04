@@ -6,3 +6,6 @@ app = FastAPI()
 def get_status():
     return {"status": "API çalışıyor"}
 
+
+#mervenini commit testi 
+
