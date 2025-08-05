@@ -37,7 +37,8 @@ def expand_abbreviations(text):
     abbreviations = {
         'mah.': 'mahalle',
         'sk.': 'sokak',
-        'cad.': 'cadde'
+        'cad.': 'cadde',
+        'blv.': 'bulvar'
     }
     
     result = text
