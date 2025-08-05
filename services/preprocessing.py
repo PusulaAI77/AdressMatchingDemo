@@ -47,3 +47,8 @@ def expand_abbreviations(text):
         result = result.replace(abbrev.capitalize(), full_form)
     
     return result
+
+def temizle(text):
+      text = lower_turkish(text)
+      text = expand_abbreviations(text)
+      return text
