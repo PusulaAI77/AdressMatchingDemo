@@ -1,9 +1,9 @@
 
-import os
-import osmnx as ox
-import geopandas as gpd
-import pandas as pd
-from sqlalchemy import create_engine
+import os                               #klasör ve dosya işlemleri için.
+import osmnx as ox                      #harita verilerini OpenStreetMap’ten almak için.
+import geopandas as gpd                 #coğrafi (harita) verileri işlemek için.
+import pandas as pd                     #normal veri işlemleri için.
+from sqlalchemy import create_engine    #veritabanı bağlantısı kurmak için
 
 # Şehir listesi
 sehirler = ["Istanbul, Turkey", "Ankara, Turkey", "Izmir, Turkey", "Bursa, Turkey", "Antalya, Turkey"]
