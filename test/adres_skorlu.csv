@@ -1,0 +1,8 @@
+orijinal_adresler,eşleşecek_adresler,etiket,skor,tahmin
+ankara çankaya atatürk bulvarı,çankaya ataturk blv ankara,1,0.8928571428571429,1
+istanbul beşiktaş barbaros bulvarı,izmir konak gazi bulvarı,0,0.3448275862068966,0
+Ankara TBMM ,Türkiye Büyük Millet Meclisi Ankara,1,0.43478260869565216,1
+"Liman, Bafra Cd. Pk:55100, 55100 İlkadım/Samsun ","Belediye Evleri Mh., Melikşah Sk. 5/B, 55080 Canik/Samsun",0,0.34615384615384615,0
+Ptt-Samsun Kargo İşleme Merkezi,Samsun Kargo işletma merkezi posta ve telgraf teşkilatı,1,0.4651162790697675,1
+Aydın SGK,İzmir sgk,0,0.11111111111111116,0
+İstanbul DSİ,devlet su işleri istanbul,1,0.4324324324324324,1

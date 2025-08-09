@@ -24,7 +24,7 @@ adres_b = "15 Sk. Atatürk Mahallesi"
 adres_c = "Ataturk Mah. 15 Sok."
 adres_d = "ataturk 15 sok."
 
-print(adres_benzerlik(adres_a, adres_b))  # Yüksek 
-print(adres_benzerlik(adres_a, adres_c))  # Orta-yüksek 
-print(adres_benzerlik(adres_a,adres_d))   # düşük
+# print(adres_benzerlik(adres_a, adres_b))  # Yüksek 
+# print(adres_benzerlik(adres_a, adres_c))  # Orta-yüksek 
+# print(adres_benzerlik(adres_a,adres_d))   # düşük
 
