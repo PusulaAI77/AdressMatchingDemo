@@ -2,7 +2,7 @@ cache = {}
 
 import requests
 
-API_KEY = "8054cf6228174d6b964ea27d622bf534"
+API_KEY = "**"
 BASE_URL = "https://api.geoapify.com/v1/geocode/search"
 
 # postmande yaptığımız işlemin burada kodu var
