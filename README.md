@@ -242,25 +242,31 @@ POST /geocode
 }
 ```
 🔬 Mevcut Servisler ve Testler
-Ana Servisler
 
-- parsing_service.py: NER tabanlı adres ayrıştırma servisi
-- matching_service.py: Akıllı adres eşleştirme algoritmaları
-- geocoding_service.py: Temel coğrafi kodlama servisi
-- geocoding_service_more.py: Gelişmiş coğrafi kodlama özellikleri
-- postalcode_service.py: Türkiye posta kodu sorgulama servisi
-- enrichment_service.py: Adres verisi zenginleştirme servisi
-- semantic.py: Semantik benzerlik analizi
+ 🔧 Ana Servisler
+| Dosya Adı                   | Açıklama                                                        |
+| --------------------------- | --------------------------------------------------------------- |
+| `parsing_service.py`        | NER (Named Entity Recognition) tabanlı adres ayrıştırma servisi |
+| `matching_service.py`       | Akıllı adres eşleştirme algoritmaları                           |
+| `geocoding_service.py`      | Temel coğrafi kodlama servisi (geocoding)                       |
+| `geocoding_service_more.py` | Gelişmiş coğrafi kodlama özellikleri                            |
+| `postalcode_service.py`     | Türkiye posta kodu sorgulama servisi                            |
+| `enrichment_service.py`     | Adres verisini zenginleştirme servisi                           |
+| `semantic.py`               | Semantik benzerlik analizi servisleri                           |
 
-Test ve Geliştirme Dosyaları
 
-- test/adres_skorlu.csv: Skorlanmış test adres verileri
-- test/adres_veri.csv: Ham test adres koleksiyonu
-- benzerlik_test.py: String benzerlik algoritmaları testi
-- hibrit_benzerlik_test.py: Hibrit skorlama sistemi testi
-- semantic_test.py: Semantik benzerlik testleri
-- test_preprocessing.py: Metin ön işleme test suite'i
-- notebooks/ner_test.ipynb: NER model performans analizi
+🧪 Test ve Geliştirme Dosyaları
+
+| Dosya Adı                  | Açıklama                                  |
+| -------------------------- | ----------------------------------------- |
+| `test/adres_skorlu.csv`    | Skorlanmış örnek test adres verileri      |
+| `test/adres_veri.csv`      | Ham test adres koleksiyonu                |
+| `benzerlik_test.py`        | String benzerlik algoritmalarının testi   |
+| `hibrit_benzerlik_test.py` | Hibrit skor bazlı eşleştirme testi        |
+| `semantic_test.py`         | Semantik benzerlik algoritmalarının testi |
+| `test_preprocessing.py`    | Metin ön işleme test dosyası              |
+| `notebooks/ner_test.ipynb` | NER model performans analizi notebook’u   |
+
 ## 🎨 Web Arayüzü Özellikleri
 
 - **Adres Girişi**: Kullanıcı dostu metin kutusu
