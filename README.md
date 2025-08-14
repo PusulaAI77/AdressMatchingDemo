@@ -43,9 +43,9 @@ Bu proje, Türkiye'deki "kirli" ve yapılandırılmamış adres metinlerini, sta
 │   ├── 📁 share/
 │   └── pyvenv.cfg
 ├── .gitignore                  # Git ignore dosyası
-├── benzerlik_test.py          # Benzerlik testi (2 uyarı)
+├── benzerlik_test.py          # Benzerlik testi 
 ├── enrichment_service.py      # Veri zenginleştirme servisi
-├── hibrit_benzerlik_test.py   # Hibrit benzerlik testi (2 uyarı)  
+├── hibrit_benzerlik_test.py   # Hibrit benzerlik testi   
 ├── matching_service.py        # Eşleştirme servisi
 ├── requirements.txt           # Python bağımlılıkları
 ├── semantic.py               # Semantik analiz servisi
