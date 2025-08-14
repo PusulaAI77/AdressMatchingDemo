@@ -57,8 +57,8 @@ def enrich_address(input_address: str):
     return result
 
 
-if __name__== "__main__":
-    input_address = "İstanbul Kadıköy Bahariye Mahallesi 12. Sokak"
+if __name__ == "__main__":
+    input_address = "Ahmet Yesevi Mh. Mücahit Cd. 34930 Sultanbeyli/istanbul"
     enriched = enrich_address(input_address)
     print("Enriched address data:")
     print(enriched)
