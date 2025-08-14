@@ -1,4 +1,3 @@
-
 from matching_service import match_address
 from services.postalcode_service import get_postal_code
 from services.geocoding_service import get_coordinates
@@ -58,7 +57,7 @@ def enrich_address(input_address: str):
     return result
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     input_address = "İstanbul Kadıköy Bahariye Mahallesi 12. Sokak"
     enriched = enrich_address(input_address)
     print("Enriched address data:")

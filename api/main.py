@@ -1,10 +1,24 @@
-
 from fastapi import FastAPI
 from pydantic import BaseModel
-from services.parsing_service import parse_address
-from matching_service import match_address
-from services.enrichment_service import enrich_address
 
+# Import'ları try-except ile kontrol edelim
+try:
+    from services.parsing_service import parse_address
+except ImportError:
+    def parse_address(address):
+        return {"error": "parsing_service bulunamadı", "address": address}
+
+try:
+    from services.matching_service import match_address
+except ImportError:
+    def match_address(address):
+        return {"error": "matching_service bulunamadı", "address": address}
+
+try:
+    from services.enrichment_service import enrich_address
+except ImportError:
+    def enrich_address(address):
+        return {"error": "enrichment_service bulunamadı", "address": address}
 
 app = FastAPI()
 
@@ -15,7 +29,7 @@ def get_status():
 class AddressRequest(BaseModel):
     address: str
 
-@app.post("/parse")
+@app.post("/abi")
 def parse(req: AddressRequest):
     return parse_address(req.address)
 
@@ -27,3 +41,18 @@ def match(req: AddressRequest):
 def enrich(req: AddressRequest):
     result = enrich_address(req.address)
     return result
+
+@app.post("/resolve_address")
+def resolve_address(req: AddressRequest):
+    # Tam iş akışı: Parse → Match → Enrich
+    parsed = parse_address(req.address)
+    matched = match_address(req.address)
+    enriched = enrich_address(req.address)
+    
+    return {
+        "input_address": req.address,
+        "parsed": parsed,
+        "matched": matched,
+        "enriched": enriched,
+        "status": "completed"
+    }
