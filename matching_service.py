@@ -52,3 +52,4 @@ def match_address(input_address):
         "semantic_score": en_iyi_semantic,
         "final_score": round(en_iyi_skor, 2)
     }
+

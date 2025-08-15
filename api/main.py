@@ -9,13 +9,13 @@ except ImportError:
         return {"error": "parsing_service bulunamadı", "address": address}
 
 try:
-    from services.matching_service import match_address
+    from matching_service import match_address
 except ImportError:
     def match_address(address):
         return {"error": "matching_service bulunamadı", "address": address}
 
 try:
-    from services.enrichment_service import enrich_address
+    from enrichment_service import enrich_address
 except ImportError:
     def enrich_address(address):
         return {"error": "enrichment_service bulunamadı", "address": address}
